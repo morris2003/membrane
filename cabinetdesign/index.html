@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>塑膠側流濾水器 10 款</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* 版面概念：一疊工程圖紙。首頁是 5×2 的零件托盤，每一款是一張帶邊條圖號的圖紙。 */
+  --paper: #E6EBED;
+  --sheet: #FFFFFF;
+  --ink: #13212B;
+  --muted: #586874;
+  --rule: #BCC7CE;
+  --accent: #00708A;
+  --accent-soft: #DCEDF1;
+  --grid: rgba(0, 112, 138, 0.07);
+  --f-display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-head: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --f-body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+/* 頂部圖號列 */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(19, 33, 43, 0.96);
+  color: #E9F1F4;
+}
+.nav .wrap { display: flex; align-items: center; gap: 18px; height: 46px; overflow-x: auto; scrollbar-width: none; }
+.nav .wrap::-webkit-scrollbar { display: none; }
+.nav-title { font-size: 13px; letter-spacing: 0.08em; white-space: nowrap; opacity: 0.8; flex-shrink: 0; }
+.nav-links { display: flex; gap: 2px; flex-shrink: 0; }
+.nav-links a {
+  font-family: var(--f-display); font-weight: 700; font-size: 19px; letter-spacing: 0.03em;
+  color: #E9F1F4; text-decoration: none; padding: 4px 9px; border-radius: 2px; white-space: nowrap; flex-shrink: 0;
+}
+.nav-links a:hover, .nav-links a:focus-visible { background: var(--accent); }
+.nav-links .nav-sep { width: 1px; background: rgba(233, 241, 244, 0.25); margin: 6px 6px; }
+
+/* 首頁圖框 */
+.hero { padding: 36px 0 8px; }
+.frame { position: relative; background: var(--sheet); border: 1.5px solid var(--ink); }
+.zones {
+  display: grid; grid-template-columns: repeat(8, 1fr);
+  font-family: var(--f-mono); font-size: 11px; color: var(--muted); text-align: center;
+}
+.zones span { padding: 2px 0; border-left: 1px solid var(--rule); }
+.zones span:first-child { border-left: 0; }
+.zones-top { border-bottom: 1px solid var(--rule); }
+.zones-bottom { border-top: 1px solid var(--rule); }
+.hero-body { padding: 30px 34px 28px; display: grid; gap: 22px; }
+.eyebrow { margin: 0; font-family: var(--f-mono); font-size: 13px; color: var(--muted); letter-spacing: 0.04em; }
+h1 {
+  margin: 0; font-family: var(--f-head); font-weight: 700;
+  font-size: clamp(34px, 5.4vw, 64px); line-height: 1.08; letter-spacing: 0.02em; text-wrap: balance;
+}
+h1 .big { font-family: var(--f-display); font-weight: 800; color: var(--accent); font-size: 1.32em; letter-spacing: 0; vertical-align: -0.04em; }
+.sub { margin: 0; max-width: 42em; font-size: 17.5px; color: #33434E; }
+.facts {
+  margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.4fr);
+  border-top: 1.5px solid var(--ink); border-left: 1px solid var(--rule);
+}
+.facts div { padding: 9px 12px 10px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.facts dt { font-size: 12px; color: var(--muted); }
+.facts dd { margin: 2px 0 0; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+
+.tray {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1.5px solid var(--ink);
+}
+.tile {
+  position: relative; display: grid; grid-template-rows: auto auto auto; align-content: start;
+  padding: 10px 14px 14px; color: inherit; text-decoration: none; background: var(--sheet);
+  border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  transition: background-color 0.18s ease;
+}
+.tile:nth-child(5n) { border-right: 0; }
+.tile:nth-last-child(-n+5) { border-bottom: 0; }
+.tile img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; margin: 4px 0 8px; transition: transform 0.25s ease; }
+.tile:hover, .tile:focus-visible { background: var(--accent-soft); outline-offset: -3px; }
+.tile:hover img { transform: translateY(-3px); }
+.tile-code { font-family: var(--f-display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--accent); }
+.tile-name { font-family: var(--f-head); font-weight: 700; font-size: 17px; line-height: 1.3; }
+.tile-tag { font-size: 12.5px; color: var(--muted); line-height: 1.45; margin-top: 2px; }
+
+/* 區段標題 */
+.sec-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px;
+  border-bottom: 1.5px solid var(--ink); padding-bottom: 8px; margin: 56px 0 16px;
+}
+.sec-head h2 { margin: 0; font-family: var(--f-head); font-size: clamp(24px, 2.6vw, 30px); text-wrap: balance; }
+.sec-head p { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+/* 對照表 */
+.table-scroll { overflow-x: auto; background: var(--sheet); border: 1px solid var(--rule); }
+table.matrix { border-collapse: collapse; min-width: 1120px; width: 100%; font-size: 13px; line-height: 1.5; }
+.matrix th, .matrix td { padding: 10px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; text-align: left; }
+.matrix thead th { font-size: 12.5px; color: var(--muted); font-weight: 700; background: #F4F7F8; }
+.matrix thead th small { font-weight: 400; font-size: 11px; }
+.matrix tbody tr:last-child th, .matrix tbody tr:last-child td { border-bottom: 0; }
+.matrix tbody th { position: sticky; left: 0; z-index: 1; background: var(--sheet); border-right: 1px solid var(--rule); min-width: 128px; }
+.matrix tbody th a { display: grid; color: inherit; text-decoration: none; font-weight: 700; font-family: var(--f-head); }
+.matrix tbody th b { font-family: var(--f-display); font-weight: 800; font-size: 23px; line-height: 1; color: var(--accent); }
+.matrix .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.matrix td.num { font-family: var(--f-mono); font-size: 13px; }
+.matrix tbody tr:hover td, .matrix tbody tr:hover th { background: #F1F8FA; }
+.basis { margin: 14px 0 0; font-size: 13.5px; color: var(--muted); max-width: 72em; }
+
+/* 每一款的圖紙 */
+.sheet {
+  display: grid; grid-template-columns: 92px minmax(0, 1fr);
+  background: var(--sheet); border: 1.5px solid var(--ink); margin: 34px 0;
+  scroll-margin-top: 60px;
+}
+.sheet-edge {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  display: flex; align-items: center; justify-content: flex-end;
+  padding: 22px 0; border-left: 1px solid var(--rule);
+  font-family: var(--f-display); font-weight: 800; font-size: 104px; line-height: 1; letter-spacing: 0.02em;
+  color: var(--accent);
+  background: repeating-linear-gradient(0deg, transparent 0 23px, var(--grid) 23px 24px);
+}
+.sheet-inner { padding: 28px 32px 32px; display: grid; gap: 26px; }
+.sheet-tag { margin: 0; font-family: var(--f-mono); font-size: 13px; color: var(--muted); letter-spacing: 0.03em; }
+.sheet-head h2 { margin: 4px 0 8px; font-family: var(--f-head); font-weight: 700; font-size: clamp(27px, 3.3vw, 40px); line-height: 1.15; text-wrap: balance; }
+.lede { margin: 0; font-size: 17.5px; max-width: 46em; }
+.sheet-main { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 30px; align-items: start; }
+.plate { margin: 0; background: #FFFFFF; border: 1px solid var(--rule); display: grid; }
+.plate img { width: 100%; height: auto; }
+.plate-hero img { max-height: 620px; object-fit: contain; }
+.plate figcaption, .drawing figcaption { font-size: 12.5px; color: var(--muted); padding: 6px 10px 7px; border-top: 1px solid var(--rule); }
+.aspects { margin: 0; border-top: 1.5px solid var(--ink); }
+.asp { display: grid; grid-template-columns: 4.6em minmax(0, 1fr); gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--rule); }
+.asp dt { font-weight: 700; color: var(--accent); font-size: 14.5px; line-height: 1.7; }
+.asp dd { margin: 0; font-size: 15.5px; }
+.plates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.plates.has-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.plate-wide { grid-column: 1 / -1; }
+.sheet-foot { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 30px; align-items: start; }
+table.specs { width: 100%; border-collapse: collapse; font-size: 14.5px; border-top: 1.5px solid var(--ink); }
+.specs th { width: 6.6em; text-align: left; vertical-align: top; font-weight: 500; color: var(--muted); padding: 9px 12px 9px 0; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+.specs td { padding: 9px 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+.drawing { margin: 0; border: 1px solid var(--rule); background: #FFFFFF; }
+
+.foot { margin: 48px 0 56px; padding-top: 14px; border-top: 1.5px solid var(--ink); font-size: 13.5px; color: var(--muted); display: grid; gap: 4px; }
+.foot p { margin: 0; max-width: 72em; }
+
+@media (max-width: 1000px) {
+  .facts { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .tray { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tile:nth-child(5n) { border-right: 1px solid var(--rule); }
+  .tile:nth-child(2n) { border-right: 0; }
+  .tile:nth-last-child(-n+5) { border-bottom: 1px solid var(--rule); }
+  .tile:nth-last-child(-n+2) { border-bottom: 0; }
+  .sheet { grid-template-columns: minmax(0, 1fr); }
+  .sheet-edge {
+    writing-mode: horizontal-tb; transform: none; justify-content: flex-start;
+    font-size: 54px; padding: 10px 22px 6px; border-left: 0; border-bottom: 1px solid var(--rule);
+    background: none;
+  }
+  .sheet-main, .sheet-foot { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .wrap { padding: 0 16px; }
+  .hero-body { padding: 22px 18px; }
+  .sheet-inner { padding: 20px 16px 22px; }
+  .plates, .plates.has-wide { grid-template-columns: minmax(0, 1fr); }
+  .zones { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .tile, .tile img { transition: none; }
+  .tile:hover img { transform: none; }
+}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="款式">
+  <div class="wrap">
+    <span class="nav-title">塑膠側流濾水器</span>
+    <div class="nav-links"><a href="#compare">對照</a><span class="nav-sep" aria-hidden="true"></span><a href="#p01">P01</a><a href="#p02">P02</a><a href="#p03">P03</a><a href="#p04">P04</a><a href="#p05">P05</a><a href="#p06">P06</a><a href="#p07">P07</a><a href="#p08">P08</a><a href="#p09">P09</a><a href="#p10">P10</a></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="frame">
+      <div class="zones zones-top" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+      <div class="hero-body">
+        <p class="eyebrow">伺服器液冷 · 側流過濾 · 膜淨 PES 0.2 µm 濾心 · Rev A</p>
+        <h1>塑膠側流濾水器 <span class="big">10</span> 款</h1>
+        <p class="sub">給低壓簡易幫浦推動的側流迴路用，殼體全部是工程塑膠。10 款在換濾心方式、進出口接頭、安裝位置、看壽命的方法與濾心選擇上各不相同，挑一款就能直接接進現有的冷卻迴路。</p>
+        <dl class="facts">
+          <div><dt>工作條件</dt><dd>10–65 °C，最高 2.5 bar</dd></div>
+          <div><dt>設計／試壓</dt><dd>3.0 bar ／ 4.5 bar</dd></div>
+          <div><dt>爆破目標</dt><dd>≥ 12 bar（23 °C）</dd></div>
+          <div><dt>濾心</dt><dd>膜淨 C10、CMG、C48</dd></div>
+          <div><dt>殼體材料</dt><dd>PP-GF30、PPSU、PVDF、PP-H</dd></div>
+        </dl>
+      </div>
+      <div class="tray">
+<a class="tile" href="#p01"><span class="tile-code">P01</span><img src="img/P01_iso.webp" alt="P01 卡口快換型 等角外觀" loading="eager"><span class="tile-name">卡口快換型</span><span class="tile-tag">壁掛 · C10 · 10 L/min</span></a>
+<a class="tile" href="#p02"><span class="tile-code">P02</span><img src="img/P02_iso.webp" alt="P02 免開殼膠囊型 等角外觀" loading="eager"><span class="tile-name">免開殼膠囊型</span><span class="tile-tag">DIN 軌 · C48 · 4 L/min</span></a>
+<a class="tile" href="#p03"><span class="tile-code">P03</span><img src="img/P03_iso.webp" alt="P03 雙聯不停機型 等角外觀" loading="eager"><span class="tile-name">雙聯不停機型</span><span class="tile-tag">落地 · C10 × 2 · 15 L/min</span></a>
+<a class="tile" href="#p04"><span class="tile-code">P04</span><img src="img/P04_iso.webp" alt="P04 頂開蓋型 等角外觀" loading="eager"><span class="tile-name">頂開蓋型</span><span class="tile-tag">落地 · C10 · 20 L/min</span></a>
+<a class="tile" href="#p05"><span class="tile-code">P05</span><img src="img/P05_iso.webp" alt="P05 衛生卡箍型 等角外觀" loading="eager"><span class="tile-name">衛生卡箍型</span><span class="tile-tag">管路支撐 · C10 DOE · 20 L/min</span></a>
+<a class="tile" href="#p06"><span class="tile-code">P06</span><img src="img/P06_iso.webp" alt="P06 機架抽屜型 等角外觀" loading="eager"><span class="tile-name">機架抽屜型</span><span class="tile-tag">19 吋 3U · C10 · 15 L/min</span></a>
+<a class="tile" href="#p07"><span class="tile-code">P07</span><img src="img/P07_iso.webp" alt="P07 反洗延壽型 等角外觀" loading="eager"><span class="tile-name">反洗延壽型</span><span class="tile-tag">壁掛 · C10 · 10 L/min</span></a>
+<a class="tile" href="#p08"><span class="tile-code">P08</span><img src="img/P08_iso.webp" alt="P08 槽內沉入型 等角外觀" loading="eager"><span class="tile-name">槽內沉入型</span><span class="tile-tag">儲液槽頂 · C10 · 15 L/min</span></a>
+<a class="tile" href="#p09"><span class="tile-code">P09</span><img src="img/P09_iso.webp" alt="P09 面板模組型 等角外觀" loading="eager"><span class="tile-name">面板模組型</span><span class="tile-tag">壁掛面板 · CMG · 10 L/min</span></a>
+<a class="tile" href="#p10"><span class="tile-code">P10</span><img src="img/P10_iso.webp" alt="P10 扁平並聯型 等角外觀" loading="eager"><span class="tile-name">扁平並聯型</span><span class="tile-tag">扁平盒 · C48 × 4 · 16 L/min</span></a>
+      </div>
+      <div class="zones zones-bottom" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="compare" aria-labelledby="compare-h" style="scroll-margin-top: 60px;">
+    <div class="sec-head">
+      <h2 id="compare-h">五個面向對照</h2>
+      <p>換濾心、進出口、安裝、看壽命、濾心：每一欄 10 款都不重複。</p>
+    </div>
+    <div class="table-scroll">
+<table class="matrix"><thead><tr><th scope="col">款式</th><th scope="col">換濾心</th><th scope="col">進出口</th><th scope="col">安裝</th><th scope="col">看壽命</th><th scope="col">濾心</th><th scope="col">主材料</th><th scope="col" class="num">額定流量<br><small>L/min</small></th><th scope="col" class="num">乾淨壓損<br><small>bar，20 °C 水／10 °C PG25</small></th><th scope="col" class="num">外形 W×D×H<br><small>mm</small></th><th scope="col" class="num">乾重</th></tr></thead><tbody><tr><th scope="row"><a href="#p01"><b>P01</b>卡口快換型</a></th><td>¼ 圈卡口＋鎖扣滑塊</td><td>G¾ 內牙，同軸對穿</td><td>頭座壁掛</td><td>磁性差壓指示器（紅色記憶）</td><td>C10 10 吋</td><td>PP-GF30</td><td class="num">10</td><td class="num">0.122／0.335</td><td class="num">164×144×365</td><td class="num">1.5 kg</td></tr>
+<tr><th scope="row"><a href="#p02"><b>P02</b>免開殼膠囊型</a></th><td>免開殼，膠囊插入自閉閥座</td><td>Ø12 快插／UQD04</td><td>DIN 軌／0U 立柱</td><td>累積流量計＋日期標籤</td><td>C48 膠囊</td><td>PPSU</td><td class="num">4</td><td class="num">0.218／0.479</td><td class="num">135×82×269</td><td class="num">0.43 kg</td></tr>
+<tr><th scope="row"><a href="#p03"><b>P03</b>雙聯不停機型</a></th><td>雙杯旋入＋旋轉閥切換</td><td>G1 活接，尾件可換</td><td>SS316 落地框架</td><td>膜片差壓錶 0–1 bar</td><td>C10 10 吋 × 2</td><td>PVDF／PP-GF30</td><td class="num">15</td><td class="num">0.219／0.539</td><td class="num">320×266×855</td><td class="num">13.6 kg</td></tr>
+<tr><th scope="row"><a href="#p04"><b>P04</b>頂開蓋型</a></th><td>頂部手輪蓋 ⅓ 圈＋排氣閥連鎖</td><td>底部 G¾ 外牙活接</td><td>落地三腳座</td><td>進口壓力錶＋刻度環</td><td>C10 10 吋</td><td>PP-GF30／PPSU 蓋</td><td class="num">20</td><td class="num">0.272／0.698</td><td class="num">349×302×526</td><td class="num">3.5 kg</td></tr>
+<tr><th scope="row"><a href="#p05"><b>P05</b>衛生卡箍型</a></th><td>DN80 衛生卡箍</td><td>DN25 衛生卡箍</td><td>管段抱箍＋C 型鋼</td><td>差壓開關乾接點</td><td>C10 DOE</td><td>PVDF</td><td class="num">20</td><td class="num">0.22／0.65</td><td class="num">260×150×403</td><td class="num">3.96 kg</td></tr>
+<tr><th scope="row"><a href="#p06"><b>P06</b>機架抽屜型</a></th><td>鉸鏈門蓋＋偏心凸輪扳把</td><td>前面板 UQD08</td><td>19 吋 3U 抽屜</td><td>電子差壓＋流量＋NFC</td><td>C10 臥裝</td><td>PPSU</td><td class="num">15</td><td class="num">0.293／0.616</td><td class="num">483×584×133</td><td class="num">9.2 kg</td></tr>
+<tr><th scope="row"><a href="#p07"><b>P07</b>反洗延壽型</a></th><td>活接旋環（杯體不轉）</td><td>19 mm 倒鉤＋G½ 排污</td><td>壁掛板</td><td>反洗前後差壓恢復量</td><td>C10 10 吋</td><td>PP-GF30／PPS-GF40</td><td class="num">10</td><td class="num">0.152／0.369</td><td class="num">238×216×599</td><td class="num">6.5 kg</td></tr>
+<tr><th scope="row"><a href="#p08"><b>P08</b>槽內沉入型</a></th><td>無壓力殼，鋼絲提把</td><td>槽頂 G¾ 外牙出口</td><td>儲液槽頂</td><td>複合真空錶</td><td>C10 吊掛</td><td>PP-H</td><td class="num">15</td><td class="num">0.175／0.494</td><td class="num">158×182×489</td><td class="num">1.33 kg</td></tr>
+<tr><th scope="row"><a href="#p09"><b>P09</b>面板模組型</a></th><td>3 個肘節扣</td><td>G1½ 活接，尾件可換</td><td>預裝壁掛背板</td><td>浮子流量計（70 % 換）</td><td>CMG 10 吋</td><td>PP-GF30／PP-H</td><td class="num">10</td><td class="num">0.19／0.40</td><td class="num">590×161×698</td><td class="num">7.1 kg</td></tr>
+<tr><th scope="row"><a href="#p10"><b>P10</b>扁平並聯型</a></th><td>4 支膠囊，各一把凸輪扳把</td><td>G½ 內牙，可串接</td><td>扁平盒 85.5 mm 高</td><td>差壓錶＋每支轉子視窗</td><td>C48 × 4</td><td>PPSU</td><td class="num">16</td><td class="num">0.263／0.541</td><td class="num">319×355×85.5</td><td class="num">4.49 kg</td></tr></tbody></table>
+    </div>
+    <p class="basis">乾淨壓損為額定流量下接頭到接頭的計算值；10 °C PG25（丙二醇 25 %）是黏度最高的冷啟動情況。CMG 與 C48 濾心耐溫 40 °C，用在 P02、P03、P09、P10 時只裝在供水側。</p>
+  </section>
+
+  <div class="sec-head">
+    <h2>10 張設計圖紙</h2>
+    <p>每款：外觀、剖面、爆炸圖、關鍵機構、規格與組立圖。</p>
+  </div>
+
+<section class="sheet" id="p01" aria-labelledby="p01-h">
+  <div class="sheet-edge" aria-hidden="true">P01</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">壁掛 · C10 · 10 L/min</p>
+      <h2 id="p01-h">卡口快換型</h2>
+      <p class="lede">杯體對準缺口上推、轉 86°，三組斜坡把杯體拉入，彈簧滑塊自動鎖住；有壓力時推不動杯體，不會帶壓誤開。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P01_iso.webp" alt="P01 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>¼ 圈三凸耳卡口加杯側彈簧鎖扣滑塊；徑向 O-ring 密封，不靠鎖緊扭力</dd></div><div class="asp"><dt>進出口</dt><dd>頭座同軸對穿 G¾ 內牙（ISO 228-1），EPDM 平墊端面密封</dd></div><div class="asp"><dt>安裝</dt><dd>頭座一體壁掛支架，4 × ⌀6.6</dd></div><div class="asp"><dt>看壽命</dt><dd>磁性活塞差壓指示器，綠／黃／紅（0.35／0.7 bar）；紅色機械記憶，按鈕復歸</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P01_section.webp" alt="P01 剖面" loading="eager"><figcaption>剖面</figcaption></figure><figure class="plate"><img src="img/P01_exploded.webp" alt="P01 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P01_back.webp" alt="P01 背面：一體壁掛支架" loading="eager"><figcaption>背面：一體壁掛支架</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋 PES 0.2 µm（2-222／鰭尾）</td></tr><tr><th scope="row">主材料</th><td>PP-GF30（頭座、杯體）</td></tr><tr><th scope="row">額定流量</th><td>10 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.122 bar（20 °C 水）／0.335 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>164 × 144 × 365 mm</td></tr><tr><th scope="row">乾重</th><td>約 1.5 kg</td></tr><tr><th scope="row">零件</th><td>客製 8／標準 14／外購 5</td></tr><tr><th scope="row">工程圖</th><td>9 張</td></tr><tr><th scope="row">強度手算</th><td>最弱為凸耳根部彎曲（65 °C 長期 SF 1.15）；推估爆破約 57 bar</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P01_drawing.webp" alt="P01 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p02" aria-labelledby="p02-h">
+  <div class="sheet-edge" aria-hidden="true">P02</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">DIN 軌 · C48 · 4 L/min</p>
+      <h2 id="p02-h">免開殼膠囊型</h2>
+      <p class="lede">整支 C48 膠囊像插卡一樣插進兩個自閉閥端座；拉一下鎖扣、把進水座往下滑 33 mm 就能取下，不開殼、不碰 O-ring、不必關管路閥。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P02_iso.webp" alt="P02 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>不開殼：膠囊兩端 Ø12 插管插入 PPSU 自閉閥端座；進水座沿 T 槽滑動，彈簧鎖扣兩段定位；出水座另加止回閥芯</dd></div><div class="asp"><dt>進出口</dt><dd>Ø12 快插（PP），可選配 OCP UQD04</dd></div><div class="asp"><dt>安裝</dt><dd>TS35 DIN 軌彈簧扣片，或 0U 立柱掛鈕</dd></div><div class="asp"><dt>看壽命</dt><dd>出口機械式累積流量計加安裝日期標籤；讀數到標籤上的更換值就換</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P02_section.webp" alt="P02 剖面：自閉閥端座" loading="eager"><figcaption>剖面：自閉閥端座</figcaption></figure><figure class="plate"><img src="img/P02_exploded.webp" alt="P02 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P02_uqd.webp" alt="P02 選配 UQD04 接頭" loading="eager"><figcaption>選配 UQD04 接頭</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C48 膠囊 Ø48 × 115（≤ 40 °C，只裝供水側）</td></tr><tr><th scope="row">主材料</th><td>PPSU（端座、閥芯）</td></tr><tr><th scope="row">額定流量</th><td>4 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.218 bar（20 °C 水）／0.479 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>135 × 82 × 269 mm</td></tr><tr><th scope="row">乾重</th><td>431 g</td></tr><tr><th scope="row">零件</th><td>客製 7 種 12 件／標準 5 種 11 件／外購 8 種 10 件</td></tr><tr><th scope="row">工程圖</th><td>8 張</td></tr><tr><th scope="row">強度手算</th><td>頂推爪挫屈 SF 7.6；3 bar 時端座分離力 40.5 N</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P02_drawing.webp" alt="P02 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p03" aria-labelledby="p03-h">
+  <div class="sheet-edge" aria-hidden="true">P03</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">落地 · C10 × 2 · 15 L/min</p>
+      <h2 id="p03-h">雙聯不停機型</h2>
+      <p class="lede">PVDF 歧管掛兩支旋入式杯體，中央一根旋轉閥桿同時切換進水層與出水層；平時一杯運轉，換濾心時把把手轉到另一側，離線那杯洩壓後旋下，系統不停機。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P03_iso.webp" alt="P03 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>兩支杯體各自旋入：雙線鋸齒牙（P 4、Ph 8，約 1.4 圈到止擋），徑向 O-ring AS568-236 密封，不靠鎖緊力；中央旋轉閥 A／A+B／B 三段定位，離線側先洩壓再旋下</dd></div><div class="asp"><dt>進出口</dt><dd>共同進出口各一個 G1 外牙（ISO 228-1）加 PVDF 活接螺母，尾件可換（G1×G¾，端面 O-ring）</dd></div><div class="asp"><dt>安裝</dt><dd>落地 SS316 3 mm 背板加底板與加強肋，歧管以 4 × M6 鎖入熱壓嵌件</dd></div><div class="asp"><dt>看壽命</dt><dd>指針式膜片差壓錶 0–1 bar 接共同進出口，讀運轉中那一支的壓差；純機械、不需電源</dd></div></dl>
+    </div>
+    <div class="plates has-wide"><figure class="plate"><img src="img/P03_section.webp" alt="P03 剖面：兩支杯體與中央切換閥" loading="eager"><figcaption>剖面：兩支杯體與中央切換閥</figcaption></figure><figure class="plate"><img src="img/P03_exploded.webp" alt="P03 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate plate-wide"><img src="img/P03_valve.webp" alt="P03 切換閥三個位置：A 運轉／A+B 並聯／B 運轉" loading="eager"><figcaption>切換閥三個位置：A 運轉／A+B 並聯／B 運轉</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋 × 2（222／鰭尾，10–65 °C）；選配 CMG 5 吋（≤ 40 °C、建議 ≤ 12 L/min）</td></tr><tr><th scope="row">主材料</th><td>歧管 PVDF；杯體 PP-GF30；閥芯 PPS-GF40；閥座 PTFE-GF25；框架 SS316</td></tr><tr><th scope="row">額定流量</th><td>15 L/min（單杯運轉，換濾心時另一杯承擔全流量）</td></tr><tr><th scope="row">乾淨壓損</th><td>單杯 0.219 bar（20 °C 水）／0.539 bar（10 °C PG25）；A+B 並聯 0.108／0.268</td></tr><tr><th scope="row">外形 W×D×H</th><td>320 × 266 × 855 mm</td></tr><tr><th scope="row">乾重</th><td>約 13.6 kg</td></tr><tr><th scope="row">零件</th><td>客製 11（7 項）／標準 25（9 項）／外購 15（7 項）</td></tr><tr><th scope="row">工程圖</th><td>8 張</td></tr><tr><th scope="row">強度手算</th><td>最弱為杯體錐底（65 °C 長期 SF 1.17；12 bar 爆破 SF 4.09）；切換扭力 5.2 N·m</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P03_drawing.webp" alt="P03 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p04" aria-labelledby="p04-h">
+  <div class="sheet-edge" aria-hidden="true">P04</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">落地 · C10 · 20 L/min</p>
+      <h2 id="p04-h">頂開蓋型</h2>
+      <p class="lede">進出水管都接在本體下方，換濾心只要從頂部把透明手輪蓋轉開 ⅓ 圈；蓋頂排氣閥的把手兼作連鎖，不先洩壓就轉不開。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P04_iso.webp" alt="P04 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>透明手輪蓋配雙線梯形牙 Tr106×12(P6)，轉 ⅓ 圈；徑向 O-ring AS568-236；排氣閥把手卡住本體凹槽形成連鎖</dd></div><div class="asp"><dt>進出口</dt><dd>本體下方 2 × G¾ 外牙加平面活接螺母；側下切線進水、杯底中心出水</dd></div><div class="asp"><dt>安裝</dt><dd>落地三腳座（可選壁掛鞍座）</dd></div><div class="asp"><dt>看壽命</dt><dd>進口壓力錶加試車時設定的紅綠刻度環；透明蓋可直接看濾心</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P04_section.webp" alt="P04 剖面：切線進水、底部出水" loading="eager"><figcaption>剖面：切線進水、底部出水</figcaption></figure><figure class="plate"><img src="img/P04_exploded.webp" alt="P04 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P04_interlock.webp" alt="P04 排氣閥把手連鎖" loading="eager"><figcaption>排氣閥把手連鎖</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋（插頭朝下）</td></tr><tr><th scope="row">主材料</th><td>本體 PP-GF30；蓋 PPSU 透明琥珀；連鎖把手與三腳座 SS316</td></tr><tr><th scope="row">額定流量</th><td>20 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.272 bar（20 °C 水）／0.698 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>349 × 302 × 526 mm</td></tr><tr><th scope="row">乾重</th><td>約 3.5 kg</td></tr><tr><th scope="row">零件</th><td>客製 6／標準 9／外購 4</td></tr><tr><th scope="row">工程圖</th><td>6 張</td></tr><tr><th scope="row">強度手算</th><td>12 bar 時杯體環向 8.8 MPa，低於含熔接線折減的 12 MPa</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P04_drawing.webp" alt="P04 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p05" aria-labelledby="p05-h">
+  <div class="sheet-edge" aria-hidden="true">P05</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">管路支撐 · C10 DOE · 20 L/min</p>
+      <h2 id="p05-h">衛生卡箍型</h2>
+      <p class="lede">全 PVDF 頭座與杯體用一支 DN80 衛生卡箍合起來；卡箍扣上的同時，刀口就把 DOE 濾心兩端的平墊壓緊。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P05_iso.webp" alt="P05 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>單螺栓鉸鏈衛生卡箍 DIN 32676 DN80（Ø106），蝶形螺帽免工具；DOE 平墊刀口密封，SS316 波形彈簧補償</dd></div><div class="asp"><dt>進出口</dt><dd>DIN 32676 DN25（Ø50.5）卡箍端 × 2</dd></div><div class="asp"><dt>安裝</dt><dd>兩個 Ø38 抱箍夾在 DN25 管段上，鎖在 41 × 41 C 型鋼</dd></div><div class="asp"><dt>看壽命</dt><dd>活塞磁簧差壓開關在 0.7 bar 輸出乾接點；另有兩個迷你卡箍測壓口</dd></div></dl>
+    </div>
+    <div class="plates has-wide"><figure class="plate"><img src="img/P05_section.webp" alt="P05 剖面：DOE 刀口密封" loading="eager"><figcaption>剖面：DOE 刀口密封</figcaption></figure><figure class="plate"><img src="img/P05_exploded.webp" alt="P05 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate plate-wide"><img src="img/P05_knife.webp" alt="P05 刀口細部（頭座與刀口座）" loading="eager"><figcaption>刀口細部（頭座與刀口座）</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋 DOE（平墊刀口密封）</td></tr><tr><th scope="row">主材料</th><td>濕接件全 PVDF；EPDM；SS316</td></tr><tr><th scope="row">額定流量</th><td>20 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.22 bar（20 °C 水）／0.65 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>260 × 150 × 403 mm</td></tr><tr><th scope="row">乾重</th><td>3.96 kg</td></tr><tr><th scope="row">零件</th><td>客製 3／標準 13／外購 3</td></tr><tr><th scope="row">工程圖</th><td>4 張</td></tr><tr><th scope="row">強度手算</th><td>杯底最弱（65 °C 長期 SF 1.36）；推估爆破約 29 bar</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P05_drawing.webp" alt="P05 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p06" aria-labelledby="p06-h">
+  <div class="sheet-edge" aria-hidden="true">P06</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">19 吋 3U · C10 · 15 L/min</p>
+      <h2 id="p06-h">機架抽屜型</h2>
+      <p class="lede">19 吋 3U 抽屜裡臥放一支 PPSU 濾殼，門蓋就開在前面板；扳下一支偏心凸輪扳把，門蓋被拉入 12 mm 並過死點自鎖。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P06_iso.webp" alt="P06 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>鉸鏈門蓋加單一偏心凸輪扳把：拉鉤扣栓、過死點 3° 自鎖、保險滑塊、兩段式洩壓；不必拉出托盤</dd></div><div class="asp"><dt>進出口</dt><dd>前面板 2 × OCP UQD08</dd></div><div class="asp"><dt>安裝</dt><dd>EIA-310 19 吋 3U，20 吋全展開滑軌</dd></div><div class="asp"><dt>看壽命</dt><dd>電子式差壓、超音波流量與液溫、LED 燈條、濾心 NFC 標籤；Modbus RTU／4–20 mA／乾接點輸出</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P06_section.webp" alt="P06 俯視剖面：臥式濾殼與流量計" loading="eager"><figcaption>俯視剖面：臥式濾殼與流量計</figcaption></figure><figure class="plate"><img src="img/P06_exploded.webp" alt="P06 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P06_cam.webp" alt="P06 偏心凸輪扳把機構" loading="eager"><figcaption>偏心凸輪扳把機構</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋（臥裝）</td></tr><tr><th scope="row">主材料</th><td>濾殼 PPSU；托盤 SGCC；漏液盤 PP-GF30</td></tr><tr><th scope="row">額定流量</th><td>15 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.293 bar（20 °C 水）／0.616 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>482.6 × 584.4 × 132.6 mm</td></tr><tr><th scope="row">乾重</th><td>約 9.2 kg</td></tr><tr><th scope="row">零件</th><td>客製 12／標準 15／外購 19（共 86 件）</td></tr><tr><th scope="row">工程圖</th><td>14 張</td></tr><tr><th scope="row">強度手算</th><td>外殼推估爆破 54 bar</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P06_drawing.webp" alt="P06 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p07" aria-labelledby="p07-h">
+  <div class="sheet-edge" aria-hidden="true">P07</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">壁掛 · C10 · 10 L/min</p>
+      <h2 id="p07-h">反洗延壽型</h2>
+      <p class="lede">頭座內建 0.3 L 濾後清水蓄壓器；把手轉到反洗約 3 秒，清水由內往外沖掉濾餅，污泥排到集污瓶。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P07_iso.webp" alt="P07 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>杯體不轉（2 個止轉鍵），活接旋環 Tr140×6 把杯體拉到硬止擋；徑向 O-ring AS568-346；定位銷加 12 凹槽防鬆</dd></div><div class="asp"><dt>進出口</dt><dd>一體 19 mm 軟管倒鉤 × 2（每口 2 道管束），加 G½ 排污口</dd></div><div class="asp"><dt>安裝</dt><dd>SS304 壁掛板</dd></div><div class="asp"><dt>看壽命</dt><dd>Ø63 差壓錶讀反洗前後的壓差恢復量，加機械反洗計數器；反洗後仍 ≥ 0.7 bar 就換</dd></div></dl>
+    </div>
+    <div class="plates has-wide"><figure class="plate"><img src="img/P07_section.webp" alt="P07 剖面：蓄壓器與三段旋轉閥" loading="eager"><figcaption>剖面：蓄壓器與三段旋轉閥</figcaption></figure><figure class="plate"><img src="img/P07_exploded.webp" alt="P07 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate plate-wide"><img src="img/P07_flow.webp" alt="P07 三段閥位流路：運轉、反洗、維修" loading="eager"><figcaption>三段閥位流路：運轉、反洗、維修</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋（外往內過濾）</td></tr><tr><th scope="row">主材料</th><td>PP-GF30；閥芯與活塞 PPS-GF40；把手 POM-C；SS316／SS304</td></tr><tr><th scope="row">額定流量</th><td>10 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.152 bar（20 °C 水）／0.369 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>238 × 216 × 599 mm</td></tr><tr><th scope="row">乾重</th><td>約 6.5 kg（含濾心）</td></tr><tr><th scope="row">零件</th><td>客製 9／標準 15／外購 10</td></tr><tr><th scope="row">工程圖</th><td>10 張</td></tr><tr><th scope="row">強度手算</th><td>3 bar 時各部位 ≤ 5 MPa；推估爆破 ≥ 54 bar（熔接線折減後約 32 bar）</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P07_drawing.webp" alt="P07 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p08" aria-labelledby="p08-h">
+  <div class="sheet-edge" aria-hidden="true">P08</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">儲液槽頂 · C10 · 15 L/min</p>
+      <h2 id="p08-h">槽內沉入型</h2>
+      <p class="lede">沒有壓力殼：PP-H 頭座帶著 C10 濾心直接插進 CDU 儲液槽，幫浦從頂端吸水；掀起提把就能整組提出換濾心。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P08_iso.webp" alt="P08 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>以儲液槽當殼體；徑向 O-ring AS568-236 塞入槽口座環，不鏽鋼鋼絲提把扣住凸耳</dd></div><div class="asp"><dt>進出口</dt><dd>單一 G¾ 外牙出口穿出槽頂（可選 G¾ 活接 19 mm 倒鉤）</dd></div><div class="asp"><dt>安裝</dt><dd>儲液槽頂：槽蓋開 Ø97 孔加 6 × M5</dd></div><div class="asp"><dt>看壽命</dt><dd>複合真空錶（−1 至 +0.6 bar），紅區 −0.50 bar 依幫浦 NPSH 計算</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P08_section.webp" alt="P08 剖面：吊掛濾心與淨水腔" loading="eager"><figcaption>剖面：吊掛濾心與淨水腔</figcaption></figure><figure class="plate"><img src="img/P08_exploded.webp" alt="P08 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P08_tray.webp" alt="P08 裝在儲液槽頂" loading="eager"><figcaption>裝在儲液槽頂</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C10 10 吋（插頭朝上吊掛，孔板護套）</td></tr><tr><th scope="row">主材料</th><td>全 PP-H</td></tr><tr><th scope="row">額定流量</th><td>15 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.175 bar（20 °C 水）／0.494 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>158 × 182 × 489 mm</td></tr><tr><th scope="row">乾重</th><td>1.33 kg</td></tr><tr><th scope="row">零件</th><td>客製 7／標準 8 項 31 件／外購 4 項 5 件</td></tr><tr><th scope="row">工程圖</th><td>8 張</td></tr><tr><th scope="row">強度手算</th><td>下降管外壓挫曲 SF 21；推估爆破約 49 bar（頂板控制）</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P08_drawing.webp" alt="P08 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p09" aria-labelledby="p09-h">
+  <div class="sheet-edge" aria-hidden="true">P09</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">壁掛面板 · CMG · 10 L/min</p>
+      <h2 id="p09-h">面板模組型</h2>
+      <p class="lede">活接、球閥、過濾器、浮子流量計、旁通與排水全部預裝在一張背板上並試壓好；現場掛 4 顆螺絲、接兩條管就能用。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P09_iso.webp" alt="P09 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>3 個不鏽鋼肘節扣（附保險扣）加杯口徑向 O-ring，免工具</dd></div><div class="asp"><dt>進出口</dt><dd>G1½ 活接，尾件可換：19 mm 倒鉤／G¾ 內牙／PP 承插 d25</dd></div><div class="asp"><dt>安裝</dt><dd>整組預裝壁掛背板，4 個葫蘆孔</dd></div><div class="asp"><dt>看壽命</dt><dd>浮子流量計看流量下降；掉到試車流量的 70 %（紅標記）就換</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P09_section.webp" alt="P09 剖面" loading="eager"><figcaption>剖面</figcaption></figure><figure class="plate"><img src="img/P09_exploded.webp" alt="P09 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P09_flow.webp" alt="P09 正面流路" loading="eager"><figcaption>正面流路</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 CMG 10 吋（≤ 40 °C，只裝供水側）；改參數可換 C10（≤ 65 °C）</td></tr><tr><th scope="row">主材料</th><td>頭座與杯體 PP-GF30；背板、管路與球閥 PP-H；流量計錐管 PSU</td></tr><tr><th scope="row">額定流量</th><td>10 L/min</td></tr><tr><th scope="row">乾淨壓損</th><td>0.19 bar（20 °C 水）／0.40 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>590 × 161 × 698 mm</td></tr><tr><th scope="row">乾重</th><td>約 7.1 kg</td></tr><tr><th scope="row">零件</th><td>客製 8／標準 19／外購 8</td></tr><tr><th scope="row">工程圖</th><td>9 張</td></tr><tr><th scope="row">強度手算</th><td>肘節扣每扣 581 N（額定 1500 N，SF 2.58）；12 bar 時最大應力 16.3 MPa</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P09_drawing.webp" alt="P09 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sheet" id="p10" aria-labelledby="p10-h">
+  <div class="sheet-edge" aria-hidden="true">P10</div>
+  <div class="sheet-inner">
+    <header class="sheet-head">
+      <p class="sheet-tag">扁平盒 · C48 × 4 · 16 L/min</p>
+      <h2 id="p10-h">扁平並聯型</h2>
+      <p class="lede">兩支 PPSU 集管之間平躺 4 支 C48 膠囊；每支一把凸輪扳把，扳起時自閉閥先關、插管後脫，其餘 3 支照常過濾。</p>
+    </header>
+    <div class="sheet-main">
+      <figure class="plate plate-hero"><img src="img/P10_iso.webp" alt="P10 等角外觀" loading="eager"><figcaption>等角外觀</figcaption></figure>
+      <dl class="aspects"><div class="asp"><dt>換濾心</dt><dd>膠囊本身承壓；扳起扳把，兩端滑套退回 12 mm，自閉提動閥先關再脫開（裕度 2.5 mm）</dd></div><div class="asp"><dt>進出口</dt><dd>兩集管兩端 G½ 內牙加 ED 端面密封，可同方向串接多台</dd></div><div class="asp"><dt>安裝</dt><dd>扁平盒高 85.5 mm，PP-GF30 底盤 4 耳 ⌀6.5（M6）</dd></div><div class="asp"><dt>看壽命</dt><dd>整機差壓錶（預警 0.5／更換 0.7 bar），加每支一個透明轉子視窗，看哪一支變慢</dd></div></dl>
+    </div>
+    <div class="plates"><figure class="plate"><img src="img/P10_section.webp" alt="P10 剖面：滑套與自閉提動閥" loading="eager"><figcaption>剖面：滑套與自閉提動閥</figcaption></figure><figure class="plate"><img src="img/P10_exploded.webp" alt="P10 爆炸圖" loading="eager"><figcaption>爆炸圖</figcaption></figure><figure class="plate"><img src="img/P10_swap.webp" alt="P10 換濾心：扳起扳把提出膠囊" loading="eager"><figcaption>換濾心：扳起扳把提出膠囊</figcaption></figure></div>
+    <div class="sheet-foot">
+      <table class="specs"><tbody><tr><th scope="row">濾心</th><td>膜淨 C48 膠囊 × 4（≤ 40 °C，只裝供水側）</td></tr><tr><th scope="row">主材料</th><td>集管、滑套、閥芯、視窗 PPSU；扳把 POM-C；底盤 PP-GF30</td></tr><tr><th scope="row">額定流量</th><td>16 L/min（每支 4）</td></tr><tr><th scope="row">乾淨壓損</th><td>0.263 bar（20 °C 水）／0.541 bar（10 °C PG25）</td></tr><tr><th scope="row">外形 W×D×H</th><td>319 × 355 × 85.5 mm</td></tr><tr><th scope="row">乾重</th><td>4.49 kg</td></tr><tr><th scope="row">零件</th><td>客製 13 種 52 件／標準 15 種 90 件／外購 3 種 7 件</td></tr><tr><th scope="row">工程圖</th><td>16 張</td></tr><tr><th scope="row">強度手算</th><td>集管最低 SF 14（23 °C 強度）；扳把最大操作力 21.3 N</td></tr></tbody></table>
+      <figure class="drawing"><img src="img/P10_drawing.webp" alt="P10 組立工程圖" loading="eager"><figcaption>組立圖（A3，第三角法）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+  <footer class="foot">
+    <p>壓損與強度為依共同設計條件手算的設計值（未做 FEM），尚未經實機驗證；濾心介面尺寸以膜淨原廠圖面為準。</p>
+    <p>塑膠側流濾水器 10 款 · Rev A · 2026-10-31</p>
+  </footer>
+</main>
+</body>
+</html>
